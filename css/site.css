@@ -1,12 +1,15 @@
 :root {
-	--primary-color: #1d5888;
-	--secondary-color: #ff993b;
-	--dark-color: #292929;
-	--white-color: #e7e7e7;
+	--primary-color: #689c54;
+	--secondary-color: #a0c492;
+	--dark-color: #2a2a2a;
+	--white-color: #fff;
+	--primary-font: 'Racing Sans One', cursive;
+	--secondary-font: 'Roboto', sans-serif;
 }
 
 body {
 	color: var(--dark-color);
+	font-family: var(--secondary-font);
 }
 
 nav,
@@ -21,6 +24,7 @@ h4,
 h5,
 h6 {
 	color: var(--primary-color);
+	font-family: var(--primary-font);
 }
 
 .bsicon {

@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Kevin MacKenzie</title>
+    <title>REVERSE: A Coding Project By Kevin MacKenzie</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,6 +10,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Google Fonts Racing Sans and Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/site.css">
     <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
@@ -20,7 +25,7 @@
     <!-- NAV Section -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/img/logokm.png" width="45" height="45" alt="logo" class="d-inline-block align-text-center"> APP NAME</a>
+        <a class="navbar-brand" href="#"><img src="/img/logokm.png" width="45" height="45" alt="logo" class="d-inline-block align-text-center"> REVERSE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +42,7 @@
                     <a class="nav-link" href="code.html">The Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="#">Git Repo</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/kevinmac61/Reverse">Git Repo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" href="#">About</a>
@@ -48,8 +53,31 @@
 </nav>
     <!-- Main Section -->
     <main class="flex-shrink-0">
-        <div class="container">
-
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                    <h1 class="display-5 fw-bold lh-1 mb-1">REVERSE: A Coding Project</h1>
+                    <h4 class="lead pb-3">There and back again. A javascript coding exercise using arrays. Write a program that displays a string in reverse.</h4>
+                </div>
+                <div class="col">
+                    <h5 class="border-1 border-bottom border-danger">Enter A String To Reverse</h5>
+                    <form action="" class="row gx-3 gy-2">
+                        <div class="col">
+                            <input type="text" name="" id="userString" class="form-control" placeholder="Enter A String" aria-label="Enter A String">
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-danger" id="btnSubmit">Reverse The String</button>
+                        </div>
+                        <div class="alert alert-danger mt-5 invisible fade show" id="alert" role="alert">
+                            <h4 class="alert-heading">Well Done!</h4>
+                            <hr>
+                            <p class="mb-0" id="msg">
+                                <!-- Insert message here -->
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
         <!-- Footer Section -->
@@ -86,5 +114,8 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
 </script>
 <script src="/js/site.js"></script>
+<script> 
+    document.getElementById("btnSubmit").addEventListener("click", getValue);
+</script>
 </body>
 </html>
