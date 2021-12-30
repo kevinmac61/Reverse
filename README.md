@@ -1,2 +1,2 @@
-# JsSiteTemplate
-Site template for JS Projects
+# Reverse
+A Javascript coding exercise using loops.
